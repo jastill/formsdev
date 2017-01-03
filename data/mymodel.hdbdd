@@ -1,0 +1,47 @@
+namespace public.formsdev.data;
+@Schema: 'FORMSDEV' 
+context mymodel {
+    
+    type SString: String(60);
+    
+
+    @Catalog.tableType: #COLUMN 
+    Entity survey {
+        key ID: String(10);
+        USERID: SString;
+        HOCKEY: SString;
+        FOOTBALL: SString;
+        SOCCER: String(10);
+        BASKETBALL: SString;
+        BASEBALL: SString;
+    };
+
+    Entity teams {
+        key ID: String(10);
+        SPORT: SString;
+        NAME: SString;
+        LOCATION: SString;
+    };
+
+    context procedures{ 
+        type survey { 
+            ID: String(10); 
+            USERID: SString;
+            HOCKEY: SString;
+            FOOTBALL: SString;
+            SOCCER: String(10);
+            BASKETBALL: SString;
+            BASEBALL: SString;
+        };
+        
+        type userid { 
+            USERID: String(256); 
+        };
+
+        type errors { 
+            HTTP_STATUS_CODE : Integer; 
+            ERROR_MESSAGE : String(100); 
+            DETAIL : String(100); 
+        }; 
+    }; 
+};

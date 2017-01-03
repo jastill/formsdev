@@ -1,0 +1,7 @@
+import = [
+{
+    table = "public.formsdev.data::mymodel.survey";
+    schema = "FORMSDEV";
+    file = "public.formsdev.data.loads:survey.csv";
+    header = false;
+}];

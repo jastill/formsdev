@@ -1,0 +1,8 @@
+PROCEDURE "FORMSDEV"."public.formsdev.procedures::currentuser" (
+        OUT val nvarchar(256)
+    )
+    LANGUAGE SQLSCRIPT
+	SQL SECURITY DEFINER READS SQL DATA AS
+ BEGIN
+      SELECT SESSION_USER into val FROM DUMMY;
+ END;  

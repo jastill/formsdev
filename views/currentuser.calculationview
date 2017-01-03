@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="currentuser" applyPrivilegeType="ANALYTIC_PRIVILEGE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="2.3" defaultClient="$$client$$" visibility="internal" outputViewType="Projection" calculationScenarioType="TREE_BASED" enforceSqlExecution="false">
+<descriptions defaultDescription="currentuser"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="public.formsdev.data::mymodel.survey" type="DATA_BASE_TABLE">
+    <viewAttributes allViewAttributes="true"/>
+    <columnObject schemaName="FORMSDEV" columnObjectName="public.formsdev.data::mymodel.survey"/>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="public.formsdev.data::mymodel.survey">
+  <attributes>
+    <attribute id="BASEBALL" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BASEBALL"/>
+      <keyMapping schemaName="FORMSDEV" columnObjectName="public.formsdev.data::mymodel.survey" columnName="BASEBALL"/>
+    </attribute>
+    <attribute id="BASKETBALL" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BASKETBALL"/>
+      <keyMapping schemaName="FORMSDEV" columnObjectName="public.formsdev.data::mymodel.survey" columnName="BASKETBALL"/>
+    </attribute>
+    <attribute id="FOOTBALL" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FOOTBALL"/>
+      <keyMapping schemaName="FORMSDEV" columnObjectName="public.formsdev.data::mymodel.survey" columnName="FOOTBALL"/>
+    </attribute>
+    <attribute id="HOCKEY" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HOCKEY"/>
+      <keyMapping schemaName="FORMSDEV" columnObjectName="public.formsdev.data::mymodel.survey" columnName="HOCKEY"/>
+    </attribute>
+    <attribute id="ID" key="true" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ID"/>
+      <keyMapping schemaName="FORMSDEV" columnObjectName="public.formsdev.data::mymodel.survey" columnName="ID"/>
+    </attribute>
+    <attribute id="SOCCER" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SOCCER"/>
+      <keyMapping schemaName="FORMSDEV" columnObjectName="public.formsdev.data::mymodel.survey" columnName="SOCCER"/>
+    </attribute>
+    <attribute id="USERID" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="USERID"/>
+      <keyMapping schemaName="FORMSDEV" columnObjectName="public.formsdev.data::mymodel.survey" columnName="USERID"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

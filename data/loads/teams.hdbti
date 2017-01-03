@@ -1,0 +1,7 @@
+import = [
+{
+    table = "public.formsdev.data::mymodel.teams";
+    schema = "FORMSDEV";
+    file = "public.formsdev.data.loads:teams.csv";
+    header = false;
+}];

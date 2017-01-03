@@ -1,0 +1,7 @@
+service {
+	"public.formsdev.data::mymodel.survey" as "Survey";
+
+	"public.formsdev.data::mymodel.teams" as "Teams";
+
+	"public.formsdev.views::currentuser" as "User" key("ID");
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Privilege:analyticPrivilege xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Privilege="http://www.sap.com/ndb/BiModelPrivilege.ecore" id="restricteduser" privilegeType="ANALYTIC_PRIVILEGE" schemaVersion="1.1">
+<descriptions defaultDescription="restricteduser"/>
+<securedModels>
+  <modelUri>/public.formsdev.views/calculationviews/currentuser</modelUri>
+</securedModels>
+
+<restriction>
+  <filter attributeName="USERID" xsi:type="Privilege:AttributeFilter">
+    <procedureFilter operator="EQ" procedureName="&quot;FORMSDEV&quot;.public.formsdev.procedures::currentuser"/>
+  </filter>
+  <attributeName>USERID</attributeName>
+  <originInformationModelUri>/public.formsdev.views/calculationviews/currentuser</originInformationModelUri>
+</restriction>
+</Privilege:analyticPrivilege>
